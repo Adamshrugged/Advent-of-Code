@@ -22,15 +22,17 @@ def main():
     winOptions = 0
     totalMultiplier = 1
 
-    # Iterate through each race
-    i = 0
-    while( i < len(times) ):
+    # part 2
+    totalMultiplier = calcWinOptions(int(time), int(distance))
+
+    # Iterate through each race - PART 1
+    #i = 0
+    #while( i < len(times) ):
         # How many ways are there to win
         #winOptions = calcWinOptions(int(times[i]), int(distances[i]))
-        winOptions = calcWinOptions(int(time), int(distance))
-        print("Race " + str(i) + ": win possibilities: " + str(winOptions))
-        totalMultiplier *= winOptions
-        i = i+1
+        #winOptions = calcWinOptions(int(time), int(distance))
+        #totalMultiplier *= winOptions
+        #i = i+1
 
     print("Total multiplier: " + str(totalMultiplier))
 
